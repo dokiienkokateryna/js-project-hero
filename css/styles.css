@@ -1,13 +1,10 @@
 .hero {
   max-width: 360px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 .hero-body {
-  margin-top: 16px;
-  margin-right: 20px;
-  margin-bottom: 40px;
-  margin-left: 20px;
-  min-width: 320px;
+  padding: 16px 20px;
 }
 
 .hero-head-black {
@@ -32,7 +29,6 @@
   height: 92px;
   background: rgba(0, 176, 104, 0.2);
   margin-left: 155px;
-
   margin-bottom: 40px;
 }
 
@@ -44,6 +40,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #292929;
+  margin-bottom: 72px;
 }
 
 .text-green {
@@ -57,7 +54,7 @@
   align-items: center;
   min-width: 360px;
   padding: 32px 0;
-  margin-bottom: 40px;
+  width: 100%;
 }
 
 .social-links-menu {
@@ -76,4 +73,83 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #292929;
+  list-style: none;
+}
+
+/**-------------------768--------------------*/
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    margin-bottom: 62px;
+  }
+  .hero-body {
+    padding: 16px 36px;
+  }
+  .hero-head-black {
+    font-size: 136px;
+    line-height: 1.14706;
+    letter-spacing: 0.01em;
+    color: #292929;
+    margin-bottom: 60px;
+  }
+
+  .hero-head-green {
+    color: #00b068;
+  }
+
+  .hero-button {
+    border: none;
+    border-radius: 16px;
+    width: 165px;
+    height: 92px;
+    background: rgba(0, 176, 104, 0.2);
+    margin-left: 155px;
+    margin-bottom: 40px;
+  }
+
+  .hero-text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 80px;
+  }
+
+  .social-links {
+    flex-direction: row;
+    min-width: 100%;
+    padding: 40px 0;
+  }
+
+  .social-links-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .social-links-list {
+    justify-content: center;
+  }
+}
+
+/**-------------------1280--------------------*/
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    max-width: 1280px;
+    margin-bottom: 82px;
+  }
+  .hero-body {
+    padding: 16px 32px;
+  }
+
+  .hero-head-black {
+    font-size: 136px;
+    line-height: 1.4706;
+    letter-spacing: 0.01em;
+    margin-bottom: 80px;
+  }
+  .hero-text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 132px;
+  }
 }
